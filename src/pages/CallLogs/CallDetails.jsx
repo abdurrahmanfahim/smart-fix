@@ -37,7 +37,7 @@ const CallDetails = ({ data }) => {
           </div>
         </div>
 
-        <div className="">
+        <div>
           <p className="text-gray text-sm leading-5 mb-1 ">Call Type</p>
           <Badge
             className={` rounded-[10px] py-1 px-2 font-inter leading-5 text-xs 
@@ -50,12 +50,12 @@ const CallDetails = ({ data }) => {
           </Badge>
         </div>
 
-        <div className="">
+        <div>
           <span className="text-gray text-sm leading-5 ">Outcome</span>
           <p className="text-white text-base leading-6 ">{data.outcome}</p>
         </div>
 
-        <div className="">
+
           <Button
             className={
               "audio-gradient flex justify-center w-full rounded-[14px] border border-[#AD46FF30] "
@@ -64,15 +64,18 @@ const CallDetails = ({ data }) => {
             <PlayIcon />
             <p className="text-[#C27AFF]  ">Play Audio Recording</p>
           </Button>
-        </div>
 
-        <div className="">
-          <div className="flex gap-2 items-center mb-3 ">
+
+
+          <div className="flex gap-2 items-center mb-3 text-info ">
             <PaperIcon />
             <p className="text-white text-base leading-6 ">Conversation Transcript</p>
           </div>
 
-          <div className="bg-primary rounded-[14px] flex flex-col gap-3 p-4  ">
+        {
+          data.transcript.length !== 0 ?
+          <>
+             <div className="bg-primary rounded-[14px] flex flex-col gap-3 p-4  ">
             {
               data.transcript.map((item) => (
                 <div>
@@ -82,7 +85,22 @@ const CallDetails = ({ data }) => {
               ))
             }
           </div>
-        </div>
+          </>
+            :
+            
+            <>
+               <div className="bg-primary rounded-[14px] flex flex-col gap-3 p-10  ">
+
+                <div className="flex flex-col gap-4 items-center justify-center">
+                  <PaperIcon className={'size-20 text-gray  '} />
+                  <p className="text-gray text-lg leading-5 ">No Transcript Here!</p>
+                </div>
+            
+          </div>
+          </>
+            }
+         
+
       </div>
     </div>
   );

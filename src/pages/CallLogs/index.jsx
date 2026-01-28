@@ -5,11 +5,11 @@ import DropdownButton from "@/components/Dropdown";
 import CallList from "./CallList";
 import CallDetails from "./CallDetails";
 import callLogs from './call-log-data.js'
+import { useState } from "react";
 
 const CallLogs = () => {
 
-
-  console.log(callLogs[0])
+  const [active, setActive] = useState(callLogs[0])
 
   const issueArray = [
     "All Issues",
@@ -36,7 +36,7 @@ const CallLogs = () => {
           className={"color-card pl-4 h-12.5   "}
           />
           
-          <CallList />
+          <CallList active={active} setActive={setActive} />
 
         </div>
 
@@ -47,7 +47,7 @@ const CallLogs = () => {
             <DropdownButton items={dateArray} />
           </div>
 
-          <CallDetails data={callLogs[0]} />
+          <CallDetails data={active} />
         </div>
       </div>
     </div>

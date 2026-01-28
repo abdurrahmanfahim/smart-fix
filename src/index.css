@@ -1,11 +1,14 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 @import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Arimo:regular,500,600,700,italic,500italic,600italic,700italic);
+
 
 @custom-variant dark (&:is(.dark *));
 
 @theme {
   --font-inter: "Inter", sans-serif;
+  --font-arimo: "Arimo", sans-serif;
   --color-primary: #111b3c;
   --color-semi-dark: #162f63;
   --color-blue: #0f62fe;
@@ -35,6 +38,8 @@
   @apply bg-[#0F172B50] border border-[#2B7FFF20];
 }
 
+
+/* ShadCn css */
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -154,6 +159,9 @@
   }
 }
 
+
+/* my priority css */
+
 .recharts-wrapper text {
   fill: #fff !important;
   opacity: 1 !important;
@@ -176,9 +184,8 @@
 }
 
 html {
-  /* color of the thumb, color of the track */
-  scrollbar-color: #162f63 #072733;
-  scrollbar-width: thin; /* Options: auto, thin, none */
+  scrollbar-color: #1c3a7c #072733;
+  scrollbar-width: thin; 
 }
 
 

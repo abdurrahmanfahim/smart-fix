@@ -7,7 +7,7 @@ const Sidebar = () => {
   const { pathname } = useLocation();
 
   return (
-    <div className="h-screen relative top-0 flex flex-col bg-primary pt-9.5 pb-13 border border-[#2B7FFF20] ">
+    <div className="h-screen sticky top-0 flex flex-col bg-primary pt-9.5 pb-13 border border-[#2B7FFF20] ">
       <div className="w-fit mx-auto">
         <img src={logo} alt="logo" />
       </div>

@@ -4,17 +4,15 @@ import { Badge } from "@/components/ui/badge";
 import CallIcon from "@/assets/icons/svg/CallIcon";
 import ClockLite from "@/assets/icons/svg/ClockLite";
 import TickIcon from "@/assets/icons/svg/TickIcon";
-import { useState } from "react";
 
-const CallList = () => {
-  const [active, setActive] = useState(callLogs[0])
+const CallList = ({active, setActive}) => {
   return (
     <div className="rounded-3xl color-card  ">
       <h3 className="font-inter font-normal text-[20px] leading-7 text-white mb-4 cursor-pointer p-4 border-b border-[#2B7FFF20] ">
         Call list
       </h3>
       {callLogs.map((item) => (
-        <div className={`flex justify-between p-4 ${active && 'border-b-3 border-[#2B7FFF]'} border-[#2B7FFF10] `} key={item.id} >
+        <div className={`flex justify-between p-4 ${item.id === active.id ? 'border-b-3 border-[#2B7FFF]' : 'border border-[#2B7FFF10]  cursor-pointer ' } `} key={item.id} onClick={() => setActive(item)} >
           <div className="flex flex-col gap-5">
             <div className="flex gap-4 ">
               <div className="icon">
