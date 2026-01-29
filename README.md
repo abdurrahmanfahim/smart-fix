@@ -1,22 +1,20 @@
 # Smart-Fix
 
-A modern web application built with **React 19** and **Vite**, focused on high performance and clean UI/UX for data visualization and management.
-
+Smart-Fix is a high-performance, specialized web platform for mobile service management. Unlike standard templates, this project features **custom-engineered UI components** built from the ground up for a lightweight and tailored user experience.
 
 ### 1. Header and Tech Stack
 
 ##  Tech Stack
 
-* **Framework:** React 19
-* **Build Tool:** Vite
-* **Routing:** React Router 7
-* **Styling:** Tailwind CSS v4
-* **Icons:** Lucide React
-* **Charts:** Recharts
-* **UI Components:** Radix UI & Shadcn
+* **Core Framework:** React 19 (Latest)
+* **Build Engine:** Vite (Lightning-fast builds)
+* **Custom UI:** Hand-crafted components using **Tailwind CSS v4** & **Class Variance Authority (CVA)**
+* **Architecture:** React Router 7 for seamless navigation
+* **Interactivity:** Radix UI primitives for accessible, custom-styled patterns
+* **Data Visualization:** Recharts for repair analytics & business insights
 
 
-## Getting Started
+## Local Setup
 
 Follow these steps to set up and run the project locally on your machine:
 
