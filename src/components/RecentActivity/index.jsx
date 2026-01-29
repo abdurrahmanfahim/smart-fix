@@ -3,7 +3,7 @@ import activitiesData from "./activity-data";
 const RecentActivity = ({className}) => {
   return (
     <div className={`p-6 rounded-2xl color-card ${className}`}>
-      <h3 className="font-inter font-normal text-[20px] leading-7 text-white mb-4 cursor-pointer">
+      <h3 className="font-inter font-normal text-xl leading-7 text-white mb-4 cursor-pointer">
         Recent Activity
       </h3>
 

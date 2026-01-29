@@ -12,7 +12,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
-const DropdownButton = ({ items }) => {
+const DropdownButton = ({ items, className, setCurrent }) => {
   const [active, setActive] = useState(items[0]);
 
   return (
@@ -20,7 +20,7 @@ const DropdownButton = ({ items }) => {
       <DropdownMenuTrigger asChild>
         <Button
           variant="outline"
-          className={"bg-[#1D293D] hover:bg-[#1D293D50] hover:text-white border border-[#2B7FFF20] hover:border-[#2B7FFF50] text-white px-8 py-4 font-inter text-base  leading-5 font-normal h-12.5 "}
+          className={`bg-[#1D293D] hover:bg-[#1D293D50] hover:text-white border border-[#2B7FFF20] hover:border-[#2B7FFF50] text-white sm:px-8 py-4 font-inter text-base  leading-5 font-normal h-12.5 ${className}`}
         >
           {active} <DropdownIcon />
         </Button>
@@ -34,7 +34,7 @@ const DropdownButton = ({ items }) => {
             <DropdownMenuCheckboxItem
               key={item + index}
               checked={active === item}
-              onSelect={() => setActive(item)}
+              onSelect={() => { setActive(item);  setCurrent(item)}}
             >
               {item}
             </DropdownMenuCheckboxItem>

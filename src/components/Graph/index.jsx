@@ -24,6 +24,7 @@ import {
 
 import chartData from "./graphData";
 import DropdownButton from "../Dropdown";
+import { useState } from "react";
 
 const chartConfig = {
   value: {
@@ -35,6 +36,8 @@ const dropdownData = ["This Week", "This Month", "This Year"];
 
 const Graph = () => {
 
+  const [current, setCurrent] = useState('This Week')
+
   return (
     <Card
       className={
@@ -44,11 +47,11 @@ const Graph = () => {
       <CardHeader className={'px-4 sm:px-6'}>
         <div className="flex justify-between ">
           <div>
-            <CardTitle className={"mb-1 font-inter sm:leading-7 sm:text-xl "}>Call Trends - This Week</CardTitle>
+            <CardTitle className={"mb-1 font-inter sm:leading-7  sm:text-xl "}>Call Trends - { current }</CardTitle>
             <CardDescription>Total: 472 calls</CardDescription>
           </div>
           <div>
-            <DropdownButton items={dropdownData} />
+            <DropdownButton setCurrent={setCurrent} className={'px-1'} items={dropdownData} />
           </div>
         </div>
       </CardHeader>
