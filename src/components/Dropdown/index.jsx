@@ -12,7 +12,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
-const DropdownButton = ({ items, className, setCurrent }) => {
+const DropdownButton = ({ items, className, setCurrent, label }) => {
   const [active, setActive] = useState(items[0]);
 
   return (
@@ -28,7 +28,7 @@ const DropdownButton = ({ items, className, setCurrent }) => {
 
       <DropdownMenuContent className="w-40 bg-[#0F172B] border border-[#2B7FFF20] text-white ">
         <DropdownMenuGroup>
-          <DropdownMenuLabel></DropdownMenuLabel>
+          {label && <DropdownMenuLabel></DropdownMenuLabel>}
 
           {items.map((item, index) => (
             <DropdownMenuCheckboxItem
