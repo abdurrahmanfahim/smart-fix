@@ -1,8 +1,8 @@
 import activitiesData from "./activity-data";
 
-const RecentActivity = () => {
+const RecentActivity = ({className}) => {
   return (
-    <div className="p-6 rounded-2xl color-card">
+    <div className={`p-6 rounded-2xl color-card ${className}`}>
       <h3 className="font-inter font-normal text-[20px] leading-7 text-white mb-4 cursor-pointer">
         Recent Activity
       </h3>
@@ -14,7 +14,7 @@ const RecentActivity = () => {
             className="rounded-[10px] p-3 flex gap-x-3 cursor-pointer bg-[#1D293D50] "
           >
             <div
-              className={`size-2 rounded-full mt-2 ${activity.dotColor}`}
+              className={`size-2 rounded-full mt-2 shrink-0 ${activity.dotColor}`}
             ></div>
 
             <div>

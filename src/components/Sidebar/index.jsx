@@ -8,16 +8,16 @@ const Sidebar = () => {
 
   return (
     <div className="h-screen sticky top-0 flex flex-col bg-primary pt-9.5 pb-13 border border-[#2B7FFF20] ">
-      <div className="w-fit  mx-auto">
-        <img className="size-10 xl:size-fit" src={logo} alt="logo" />
+      <div className="w-fit mx-auto">
+        <img className="size-8 xl:size-fit" src={logo} alt="logo" />
       </div>
 
-      <ul className="mt-18 font-medium text-base leading-[150%] text-white px-2 space-y-7">
+      <ul className="mt-10 sm:mt-18 font-medium text-base leading-[150%] text-white px-1 sm:px-2 space-y-7">
         {sidebarData.map((item, index) => (
           <li key={index}>
             <Link
               to={item.routeName}
-              className={`py-1 px-2 inline-flex xl:flex items-center gap-0 xl:gap-4 rounded-xl whitespace-nowrap ${pathname == item.routeName ? "inset-shadow border-b border-[rgba(255,255,255,0.50)]" : ""}`}
+              className={`py-1 px-1 sm:px-2 inline-flex xl:flex items-center gap-0 xl:gap-4 rounded-xl whitespace-nowrap ${pathname == item.routeName ? "inset-shadow border-b border-[rgba(255,255,255,0.50)]" : ""}`}
             >
               <span className="  text-white h-8 w-8 flex items-center justify-center ">
                 {item.icon}

@@ -10,37 +10,37 @@ import SwapIcon from "@/assets/icons/svg/SwapIcon";
       title: "Total Calls Today",
       count: 127,
       percent: "+12%",
-      posIcon: <CallIcon />,
+      posIcon: <CallIcon className={'size-8 sm:size-12'} />,
     },
     {
       title: "AI-Handled Calls",
       count: 98,
       percent: "+77%",
-      posIcon: <BotIcon />,
+      posIcon: <BotIcon className={'size-8 sm:size-12'} />,
     },
     {
       title: "Warm Transfer",
       count: 23,
       percent: "+18%",
-      posIcon: <SwapIcon />,
+      posIcon: <SwapIcon className={'size-8 sm:size-12'} />,
     },
     {
       title: "Appointments Booked",
       count: 34,
       percent: "+8%",
-      posIcon: <CalenderFillIcon />,
+      posIcon: <CalenderFillIcon className={'size-8 sm:size-12'} />,
     },
     {
       title: "Missed/Failed Calls",
       count: 6,
       percent: "-3%",
-      posIcon: <CrossIcon />,
+      posIcon: <CrossIcon className={'size-8 sm:size-12'} />,
     },
     {
       title: "Avg Call Duration",
       count: '3:42',
       percent: "+15%",
-      posIcon: <ClockIcon />,
+      posIcon: <ClockIcon className={'size-8 sm:size-12'} />,
     },
 ];
   

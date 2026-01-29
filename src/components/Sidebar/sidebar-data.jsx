@@ -5,22 +5,22 @@ import SidebarCalenderIcon from "@/assets/icons/svg/SidebarCalenderIcon";
 
 const sidebarData = [
   {
-    icon: <HomeIcon />,
+    icon: <HomeIcon className={'size-6 sm:size-12 '} />,
     text: "Dashboard Overview",
     routeName: "/",
   },
   {
-    icon: <PhoneIcon />,
+    icon: <PhoneIcon className={'size-6 sm:size-12'} />,
     text: "Call Logs",
     routeName: "/call-logs",
   },
   {
-    icon: <SidebarCalenderIcon />,
+    icon: <SidebarCalenderIcon className={'size-6 sm:size-12'} />,
     text: "Appointments",
     routeName: "/appointments",
   },
   {
-    icon: <SettingsIcon />,
+    icon: <SettingsIcon className={'size-6 sm:size-12'} />,
     text: "Settings",
     routeName: "/settings",
   },

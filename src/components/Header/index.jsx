@@ -5,7 +5,7 @@ const Header = () => {
     const { pathname } = useLocation()
     return (
         <header className="sticky top-0 bg-primary w-full flex items-center justify-between px-6 py-2">
-            <h1 className=" font-inter font-normal text-[32px] leading-9 text-white">
+            <h1 className=" font-inter font-normal text-xl sm:text-[32px] leading-9 text-white">
                 {pathname == '/' && 'Dashboard Overview'}
                 {pathname == '/call-logs' && 'Call Logs & History'}
                 {pathname == '/appointments' && 'Appointments'}
@@ -13,8 +13,8 @@ const Header = () => {
             </h1>
 
             <div className="flex items-center justify-center space-x-10 text-white ">
-                <BallIcon />
-                <img src={avatar} alt="profileImg" />
+                <BallIcon className={'size-5 sm:size-auto'} />
+                <img className="size-8 sm:size-auto" src={avatar} alt="profileImg" />
             </div>
         </header>
     )
