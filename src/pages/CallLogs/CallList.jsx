@@ -8,7 +8,7 @@ import TickIcon from "@/assets/icons/svg/TickIcon";
 const CallList = ({ active, setActive }) => {
   return (
     <section className="rounded-3xl color-card pb-6 ">
-      <h3 className="font-inter font-normal text-[20px] leading-7 text-white mb-4 cursor-pointer p-4 border-b border-[#2B7FFF20] ">
+      <h3 className="font-inter font-normal text-[20px] leading-7 text-white sm:mb-4 cursor-pointer p-4 border-b border-[#2B7FFF20] ">
         Call list
       </h3>
       {callLogs.map((item) => (

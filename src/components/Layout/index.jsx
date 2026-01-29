@@ -6,7 +6,7 @@ const Layout = () => {
   return (
     <div className="bg-main-gradient w-full  ">
       <div className="flex  ">
-          <Sidebar />
+        <Sidebar />
         <div className="main-content w-full">
             <Header />
           <div className=" ">
