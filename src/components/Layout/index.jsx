@@ -4,8 +4,7 @@ import Sidebar from "../Sidebar";
 
 const Layout = () => {
   return (
-    <div className="bg-main-gradient w-full  ">
-      <div className="flex  ">
+    <div className="bg-main-gradient w-full  flex flex-1 min-w-0  ">
         <Sidebar />
         <div className="main-content w-full">
             <Header />
@@ -13,7 +12,6 @@ const Layout = () => {
             <Outlet />
           </div>
         </div>
-      </div>
     </div>
   );
 };

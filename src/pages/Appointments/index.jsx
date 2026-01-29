@@ -6,9 +6,13 @@ import paginationTableData from "./PaginationTableData";
 const Appointments = () => {
   return (
     <section className=" m-2 sm:m-6 ">
-      <AppointmentCardGroup />
-      <BookingLinkCopy />
-      <div className="max-w-screen overflow-x-scroll">
+      <div className="max-md:max-w-[90%] ">
+        <AppointmentCardGroup />
+      </div>
+      <div className="max-md:max-w-[90%] ">
+        <BookingLinkCopy />
+      </div>
+      <div className="">
         <Table data={paginationTableData} />
       </div>
     </section>

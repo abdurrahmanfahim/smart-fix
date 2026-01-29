@@ -32,7 +32,7 @@ const AppointmentTable = ({ data }) => {
 
   return (
     <>
-      <Table className={"text-white text-center rounded-3xl  "}>
+      <Table className={"text-white text-center rounded-3xl"}>
         <TableHeader>
           <TableRow className={"border-[#162F61] bg-[#111b3b] hover:bg-primary "}>
             <TableHead className={headerStyle}>Client Name</TableHead>
