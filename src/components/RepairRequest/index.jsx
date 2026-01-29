@@ -7,7 +7,7 @@ const RepairRequest = ({className}) => {
   console.log(repairRequestsData)
 
   return (
-    <div className={`grow font-arimo p-6 rounded-2xl color-card border border-borderColor ${className} `}>
+    <section className={`grow font-arimo p-6 rounded-2xl color-card border border-borderColor ${className} `}>
       <h3 className="font-inter font-normal text-[20px] leading-7 text-white mb-4 cursor-pointer">
         Top Repair Requests
       </h3>
@@ -21,7 +21,7 @@ const RepairRequest = ({className}) => {
             />
           ))}
         </div>
-    </div>
+    </section>
   )
 }
 

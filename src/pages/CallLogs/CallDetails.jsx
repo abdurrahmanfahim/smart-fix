@@ -7,7 +7,7 @@ import PaperIcon from "@/assets/icons/svg/PaperIcon";
 const CallDetails = ({ data }) => {
   console.log(data);
   return (
-    <div className="rounded-3xl color-card  ">
+    <section className="rounded-3xl color-card  ">
       <h3 className="font-inter font-normal text-[20px] leading-7 text-white mb-4 cursor-pointer p-4 border-b border-[#2B7FFF20] ">
         Call Details
       </h3>
@@ -58,7 +58,7 @@ const CallDetails = ({ data }) => {
 
           <Button
             className={
-              "audio-gradient flex justify-center w-full rounded-[14px] border border-[#AD46FF30] "
+              "audio-gradient flex justify-center w-full rounded-[14px] border border-[#AD46FF30] cursor-pointer "
             }
           >
             <PlayIcon />
@@ -92,7 +92,7 @@ const CallDetails = ({ data }) => {
                <div className="bg-primary rounded-[14px] flex flex-col gap-3 p-10  ">
 
                 <div className="flex flex-col gap-4 items-center justify-center">
-                  <PaperIcon className={'size-20 text-gray  '} />
+                  <PaperIcon className={'size-10 sm:size-20 text-gray  '} />
                   <p className="text-gray text-lg leading-5 ">No Transcript Here!</p>
                 </div>
             
@@ -102,7 +102,7 @@ const CallDetails = ({ data }) => {
          
 
       </div>
-    </div>
+    </section>
   );
 };
 

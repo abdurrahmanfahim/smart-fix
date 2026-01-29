@@ -4,7 +4,7 @@ import cardsData from "./dashboard-cards-data";
 const DashboardCards = () => {
 
   return (
-    <div className="flex items-center justify-between gap-3 sm:gap-6 flex-wrap">
+    <section className="flex items-center justify-between gap-3 sm:gap-6 flex-wrap">
       {cardsData.map((card, index) => (
         <div className=" w-[31.2%] grow"  key={card.title + index}>
           <MyCard
@@ -15,7 +15,7 @@ const DashboardCards = () => {
           />
         </div>
       ))}
-    </div>
+    </section>
   );
 };
 
