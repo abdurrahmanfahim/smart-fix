@@ -4,8 +4,8 @@ import CallLogs from "./pages/CallLogs";
 import Settings from "./pages/Settings";
 import Appointments from "./pages/Appointments";
 import Login from "./pages/Login";
-import ProfileEdit from "./pages/Settings/profileEdit";
 import Layout from "./components/Layout";
+import EditProfile from "./pages/Settings/EditProfile";
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
           <Route index element={<Dashboard />} />
           <Route path="/call-logs" element={<CallLogs />} />
           <Route path="/settings" element={<Settings />} />
-          <Route path="/settings/edit" element={<ProfileEdit />} />
+          <Route path="/settings/profile" element={<EditProfile />} />
           <Route path="/appointments" element={<Appointments />} />
         </Route>
         <Route path="/login" element={<Login />} />

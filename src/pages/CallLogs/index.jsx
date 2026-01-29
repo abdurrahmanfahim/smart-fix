@@ -1,23 +1,15 @@
-import React from "react";
-import { InputInputGroup } from "./Input";
-import { SearchIcon } from "lucide-react";
 import DropdownButton from "@/components/Dropdown";
-import CallList from "./CallList";
-import CallDetails from "./CallDetails";
-import callLogs from './call-log-data.js'
+import { SearchIcon } from "lucide-react";
 import { useState } from "react";
+import CallDetails from "./CallDetails";
+import CallList from "./CallList";
+import callLogs from "./call-log-data.js";
+import { SearchBar } from "./SearchBar";
 
 const CallLogs = () => {
+  const [active, setActive] = useState(callLogs[0]);
 
-  const [active, setActive] = useState(callLogs[0])
-
-  const issueArray = [
-    "All Issues",
-    "Screen",
-    "Software",
-    "Battery",
-    "Unknown",
-  ];
+  const issueArray = ["All Issues", "Screen", "Software", "Battery", "Unknown"];
   const callType = [
     "All Type",
     "AI Resolved",
@@ -29,15 +21,13 @@ const CallLogs = () => {
   return (
     <div className="m-6">
       <div className="flex justify-between gap-6 ">
-        
-        <div className="flex flex-col gap-6 grow max-w-1/2 ">
-          <InputInputGroup
-          icon={<SearchIcon />}
-          className={"color-card pl-4 h-12.5   "}
+        <div className="flex flex-col gap-6 grow max-w-1/2 text-white ">
+          <SearchBar
+            icon={<SearchIcon />}
+            className={"color-card pl-4 h-12.5   "}
           />
-          
-          <CallList active={active} setActive={setActive} />
 
+          <CallList active={active} setActive={setActive} />
         </div>
 
         <div className="flex flex-col gap-6 grow max-w-1/2 ">

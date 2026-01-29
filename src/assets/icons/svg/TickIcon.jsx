@@ -1,4 +1,4 @@
-const TickIcon = ({ className }) => {
+const TickIcon = ({ className='text-success' }) => {
   return (
     <svg
       width="20"
