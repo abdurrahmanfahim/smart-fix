@@ -14,9 +14,9 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Dashboard />} />
           <Route path="/call-logs" element={<CallLogs />} />
+          <Route path="/appointments" element={<Appointments />} />
           <Route path="/settings" element={<Settings />} />
           <Route path="/settings/profile" element={<EditProfile />} />
-          <Route path="/appointments" element={<Appointments />} />
         </Route>
         <Route path="/login" element={<Login />} />
       </Routes>

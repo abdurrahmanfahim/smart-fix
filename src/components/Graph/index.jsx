@@ -38,13 +38,13 @@ const Graph = () => {
   return (
     <Card
       className={
-        "min-w-full max-h-106.5 bg-[#0F172B50] border border-[#2B7FFF20] "
+        "min-w-full max-h-106.5 bg-[#0F172B50] border border-[#2B7FFF20] gap-2 sm:gap-6 py-4 sm:py-6 "
       }
     >
-      <CardHeader>
-        <div className="flex justify-between">
+      <CardHeader className={'px-4 sm:px-6'}>
+        <div className="flex justify-between ">
           <div>
-            <CardTitle className={"mb-1"}>Call Trends - This Week</CardTitle>
+            <CardTitle className={"mb-1 font-inter sm:leading-7 sm:text-xl "}>Call Trends - This Week</CardTitle>
             <CardDescription>Total: 472 calls</CardDescription>
           </div>
           <div>
@@ -53,7 +53,7 @@ const Graph = () => {
         </div>
       </CardHeader>
 
-      <CardContent className={"min-w-full max-h-75 "}>
+      <CardContent className={"min-w-full max-h-75 p-2 sm:p-6 "}>
         <ChartContainer
           className={"min-w-full max-h-75 "}
           config={chartConfig}

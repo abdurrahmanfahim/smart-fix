@@ -19,8 +19,8 @@ const CallLogs = () => {
   ];
   const dateArray = ["Today", "Last Week", "Last Month", "This Year", "All"];
   return (
-    <div className="m-6">
-      <div className="flex justify-between gap-6 ">
+    <div className="m-2 sm:m-6">
+      <div className="flex flex-wrap justify-between gap-6 ">
         <div className="flex flex-col gap-6 grow max-w-1/2 text-white ">
           <SearchBar
             icon={<SearchIcon />}

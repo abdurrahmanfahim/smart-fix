@@ -6,7 +6,7 @@ import paginationTableData from './PaginationTableData'
 
 const Appointments = () => {
   return (
-    <section  className=' m-6 '>
+    <section  className=' m-2 sm:m-6 '>
       <AppointmentCardGroup/>
       <BookingLinkCopy/>
       <Pagination data={paginationTableData} />

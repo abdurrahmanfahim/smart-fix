@@ -7,7 +7,7 @@ const Settings = () => {
   console.log(profileData);
   return (
     <>
-      <div className="p-6 max-w-137.5">
+      <div className="m-2 sm:m-6 max-w-137.5">
         <div className="font-inter font-normal text-2xl leading-9 text-white flex gap-x-16 ml-3">
           <button>Profile</button>
           <button>Password Settings</button>
